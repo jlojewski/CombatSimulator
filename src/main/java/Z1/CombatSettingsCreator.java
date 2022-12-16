@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class CombatSettingsCreator {
+    
+    //use this if you want to create a new settings json for whatever reason
 
     public static void main(String[] args) {
 

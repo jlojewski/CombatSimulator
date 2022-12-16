@@ -1,5 +1,8 @@
 package Z1;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -36,7 +39,8 @@ public class Combatant {
         this.combatantId = combatantId;
     }
 
-    public Combatant(String name, int strength, int toughness, int combatantId) {
+    @JsonCreator
+    public Combatant(@JsonProperty("name") String name, @JsonProperty("strength") int strength, @JsonProperty("toughness") int toughness, @JsonProperty("combatantId") int combatantId) {
         this.name = name;
         this.strength = strength;
         this.toughness = toughness;

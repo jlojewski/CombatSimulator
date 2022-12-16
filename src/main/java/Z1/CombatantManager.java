@@ -5,7 +5,21 @@ import java.util.Scanner;
 
 public class CombatantManager {
 
-    public static ArrayList createCombatants() {
+    private static CombatantManager CombatantManagerInstance;
+
+    private CombatantManager() {
+    }
+
+    public static CombatantManager getInstance() {
+        if (CombatantManagerInstance == null) {
+            CombatantManagerInstance = new CombatantManager();
+        }
+
+        return CombatantManagerInstance;
+    }
+
+
+    public ArrayList createCombatantsBasedOnInput() {
         String relayedMessage = null;
         relayedMessage = "How many combatants will participate?";
         IOManager.getInstance().relayString(relayedMessage);
@@ -69,6 +83,19 @@ public class CombatantManager {
             combatants.add(new Combatant(statInputName, statInputStr, statInputTough, i));
 
         }
+        return combatants;
+    }
+
+    public ArrayList createCombatantsBasedOnSettings(CombatSettings settingsToWorkOn) {
+        String relayedMessage = null;
+        relayedMessage = "Creating combatants based on settings:";
+        IOManager.getInstance().relayString(relayedMessage);
+        ArrayList<Combatant> combatants = new ArrayList<Combatant>(settingsToWorkOn.combatants);
+        for(Combatant c : combatants) {
+            relayedMessage = "Created " + c.getName() + " (Strength " + c.getStrength() + ", Toughness " + c.getToughness() + ")";
+            IOManager.getInstance().relayString(relayedMessage);
+        }
+
         return combatants;
     }
 

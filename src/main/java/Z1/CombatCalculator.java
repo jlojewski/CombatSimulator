@@ -23,7 +23,7 @@ public final class CombatCalculator {
     }
 
 
-    public void performAttackSequence(ArrayList<Combatant> attackSequenceList) {
+    public void performAttackSequence(ArrayList<Combatant> attackSequenceList, int seqHitChance, int seqCritChance) {
 
         for (int i = 0; i < attackSequenceList.size(); i++) {
             String relayedMessage = null;
@@ -34,8 +34,8 @@ public final class CombatCalculator {
             relayedMessage = "Combatant " + a.getName() + " attacks " + b.getName() + "!";
             IOManager.getInstance().relayString(relayedMessage);
 
-            if (performHitSequence(attackSequenceList, a) == true) {
-                boolean critHappens = performCritSequence(attackSequenceList, a);
+            if (performHitSequence(attackSequenceList, a, seqHitChance, seqCritChance) == true) {
+                boolean critHappens = performCritSequence(attackSequenceList, a, seqCritChance);
                 performDamageSequence(attackSequenceList, a, b, critHappens);
                 killCombatantOrNot(attackSequenceList, b);
             }
@@ -58,36 +58,36 @@ public final class CombatCalculator {
     }
 
 
-    public boolean performHitSequence(ArrayList<Combatant> combatantList, Combatant attacker) {
+    public boolean performHitSequence(ArrayList<Combatant> combatantList, Combatant attacker, int hitChance, int critChance) {
         int hitRoll = ThreadLocalRandom.current().nextInt(1, 101);
         String relayedMessage = null;
-        if (hitRoll <= Main.HIT_CHANCE) {
-            relayedMessage = "Combatant " + attacker.getName() + " rolls " + hitRoll + " (chance to hit: " + Main.HIT_CHANCE + "%)." + " It's a hit!";
+        if (hitRoll <= hitChance) {
+            relayedMessage = "Combatant " + attacker.getName() + " rolls " + hitRoll + " (chance to hit: " + hitChance + "%)." + " It's a hit!";
             IOManager.getInstance().relayString(relayedMessage);
 
 
             return true;
 
         } else {
-            relayedMessage = "Combatant " + attacker.getName() + " rolls " + hitRoll + " (chance to hit: " + Main.HIT_CHANCE + "%)." + " It's a miss.";
+            relayedMessage = "Combatant " + attacker.getName() + " rolls " + hitRoll + " (chance to hit: " + hitChance + "%)." + " It's a miss.";
             IOManager.getInstance().relayString(relayedMessage);
 
             return false;
         }
     }
 
-    public boolean performCritSequence(ArrayList<Combatant> combatantList, Combatant attacker) {
+    public boolean performCritSequence(ArrayList<Combatant> combatantList, Combatant attacker, int critChance) {
 
         int critRoll = ThreadLocalRandom.current().nextInt(1, 101);
         String relayedMessage = null;
-        if (critRoll <= Main.CRIT_CHANCE) {
-            relayedMessage = "Combatant " + attacker.getName() + " rolls " + critRoll + " (chance to crit: " + Main.CRIT_CHANCE + "%)." + " Critical strike!";
+        if (critRoll <= critChance) {
+            relayedMessage = "Combatant " + attacker.getName() + " rolls " + critRoll + " (chance to crit: " + critChance + "%)." + " Critical strike!";
             IOManager.getInstance().relayString(relayedMessage);
 
             return true;
 
         } else {
-            relayedMessage = "Combatant " + attacker.getName() + " rolls " + critRoll + " (chance to crit: " + Main.CRIT_CHANCE + "%)." + " No crit.";
+            relayedMessage = "Combatant " + attacker.getName() + " rolls " + critRoll + " (chance to crit: " + critChance + "%)." + " No crit.";
             IOManager.getInstance().relayString(relayedMessage);
 
             return false;

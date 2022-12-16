@@ -1,0 +1,10 @@
+
+L
+java:S3740	"/Provide the parametrized type for this generic.(³¾µí8¨ñƒŒÏ0
+‡
+java:S1319	"jThe type of "combatants" should be an interface such as "List" rather than the implementation "ArrayList".(³¾µí8Îÿ‘ŒÏ0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(äéíé
+U
+java:S1118":Add a private constructor to hide the implicit public one.(“â¯Éüÿÿÿÿ
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Şÿ‘ŒÏ0

@@ -1,0 +1,69 @@
+
+g
+java:S1192$"LDefine a constant instead of duplicating this literal "Combatant " 10 times.(ªûÈ½úÿÿÿÿ
+c
+java:S1192C"HDefine a constant instead of duplicating this literal " rolls " 4 times.(ÇÙÃøÿÿÿÿ
+ˆ
+java:S1319 "rThe type of "attackSequenceList" should be an interface such as "List" rather than the implementation "ArrayList".(ŸêÛ¾
+ˆ
+java:S13192"mThe type of "combatantList" should be an interface such as "List" rather than the implementation "ArrayList".(˜ÙÊùÿÿÿÿ
+ˆ
+java:S1319@"mThe type of "combatantList" should be an interface such as "List" rather than the implementation "ArrayList".(˜úîùÿÿÿÿÿ
+ƒ
+java:S1319O"mThe type of "combatantList" should be an interface such as "List" rather than the implementation "ArrayList".(³µ‚º
+ƒ
+java:S1319]"mThe type of "combatantList" should be an interface such as "List" rather than the implementation "ArrayList".(°Ğ½Î
+
+java:S1319r"uThe type of "potentialCasualtyList" should be an interface such as "List" rather than the implementation "ArrayList".(­‹®ÿÿÿÿÿ
+…
+java:S1319{"jThe type of "listToTrim" should be an interface such as "List" rather than the implementation "ArrayList".(‘­º“ÿÿÿÿÿ
+‡
+java:S1319€"kThe type of "menStanding" should be an interface such as "List" rather than the implementation "ArrayList".(—Ä¼ıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(äéíé
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(ªûÈ½úÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(Ü—Ïßıÿÿÿÿ
+B
+java:S1125("'Remove the unnecessary boolean literal.(ë±ÔÅùÿÿÿÿ
+T
+java:S18543">Remove this useless assignment to local variable "attackerId".(ÙÁ
+E
+java:S14813"/Remove this unused "attackerId" local variable.(ÙÁ
+h
+java:S62047"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(â¥
+O
+java:S1172@"4Remove this unused method parameter "combatantList".(˜úîùÿÿÿÿÿ
+S	java:S106C"9Replace this use of System.out or System.err by a logger.(ÇÙÃøÿÿÿÿ
+N	java:S106I"9Replace this use of System.out or System.err by a logger.(È¯‘©
+J
+java:S1172O"4Remove this unused method parameter "combatantList".(³µ‚º
+M	java:S106S"9Replace this use of System.out or System.err by a logger.(«è¼)
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(âÌôÿÿÿÿÿ
+J
+java:S1172]"4Remove this unused method parameter "combatantList".(°Ğ½Î
+B
+java:S1125a"'Remove the unnecessary boolean literal.(—øòÕùÿÿÿÿ
+S	java:S106c"9Replace this use of System.out or System.err by a logger.(™®ó”üÿÿÿÿ
+S	java:S106e"9Replace this use of System.out or System.err by a logger.(Ú¨òŒûÿÿÿÿ
+7
+java:S1116f"Remove this empty statement.(Åñ­õşÿÿÿÿ
+S	java:S106j"9Replace this use of System.out or System.err by a logger.(šÒ»‘şÿÿÿÿ
+S	java:S106l"9Replace this use of System.out or System.err by a logger.(Ú¨òŒûÿÿÿÿ
+7
+java:S1116m"Remove this empty statement.(Åñ­õşÿÿÿÿ
+N	java:S106t"9Replace this use of System.out or System.err by a logger.(îüä
+B
+java:S1125|"'Remove the unnecessary boolean literal.(ĞáôÇıÿÿÿÿ
+T	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(³Â¾îıÿÿÿÿ
+O	java:S106„"9Replace this use of System.out or System.err by a logger.(¥Èïğ
+W	java:S125"<This block of commented-out lines of code should be removed.(á€’²ùÿÿÿÿ
+Q	java:S125•"<This block of commented-out lines of code should be removed.(Åì¶
+R	java:S125¬"<This block of commented-out lines of code should be removed.(ïì«—
+A
+java:S1128"+Remove this unused import 'java.sql.Array'.(Õø‹ù
+O
+java:S1128"9Remove this unused import 'java.util.function.Predicate'.(ïÍ–¶
+H
+java:S1128	"-Remove this unused import 'Z1.Main.ANSI_RED'.(•†Ÿ³üÿÿÿÿ
+E
+java:S1128
+"/Remove this unused import 'Z1.Main.ANSI_RESET'.(¦Ï‰¾

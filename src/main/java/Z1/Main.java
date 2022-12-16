@@ -13,7 +13,6 @@ public class Main {
         MessageManager.getInstance().printMessage(relayedMessage);
 
         Quip.getInstance().initializeQuipList();
-        IOManager.getInstance().initializeOutputArray();
 
         ArrayList<Combatant> combatantList = CombatantManager.getInstance().createCombatantsBasedOnSettings(currentCombatSettings);
 

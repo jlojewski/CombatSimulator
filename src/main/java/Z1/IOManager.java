@@ -16,6 +16,7 @@ public class IOManager {
     private static IOManager IOManagerInstance;
 
     private IOManager() {
+        IOManagerOutput=new ArrayList<>();
     }
 
     public static IOManager getInstance() {
@@ -27,10 +28,7 @@ public class IOManager {
     }
 
 
-    public void initializeOutputArray() {
-        IOManagerOutput=new ArrayList<>();
 
-    }
 
     public void collectOutputToArray(String textToCollect) {
         IOManagerOutput.add(textToCollect);

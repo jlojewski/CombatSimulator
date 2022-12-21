@@ -6,61 +6,58 @@ Created Bolo (Strength 2, Toughness 5)
 Let's go!
 -|------  ------|-
 Round 1 begins.
-Combatant Siwy acts.
-Combatant Siwy attacks Jan!
-Combatant Siwy rolls 96 (chance to hit: 70%). It's a miss.
 Combatant Zdzich acts.
-Combatant Zdzich attacks Jan!
-Combatant Zdzich rolls 100 (chance to hit: 70%). It's a miss.
-Combatant Bolo acts.
-Combatant Bolo attacks Zdzich!
-Combatant Bolo rolls 39 (chance to hit: 70%). It's a hit!
-Combatant Bolo rolls 26 (chance to crit: 25%). No crit.
-Combatant Bolo deals 2 damage to Zdzich.
-Combatant Zdzich's Toughness is reduced to 6.
-Combatant Jan acts.
-Combatant Jan attacks Bolo!
-Combatant Jan rolls 91 (chance to hit: 70%). It's a miss.
-Round 2 begins.
+Combatant Zdzich attacks Bolo!
+Combatant Zdzich rolls 20 (chance to hit: 70%). It's a hit!
+Combatant Zdzich rolls 77 (chance to crit: 25%). No crit.
+Combatant Zdzich deals 6 damage to Bolo.
+Combatant Bolo's Toughness is reduced to -1.
+Bolo died! And nothing of value was lost.
 Combatant Jan acts.
 Combatant Jan attacks Siwy!
-Combatant Jan rolls 7 (chance to hit: 70%). It's a hit!
-Combatant Jan rolls 7 (chance to crit: 25%). Critical strike!
+Combatant Jan rolls 60 (chance to hit: 70%). It's a hit!
+Combatant Jan rolls 11 (chance to crit: 25%). Critical strike!
 Combatant Jan deals 10 critical damage (2 x Strength 5) to Siwy.
 Combatant Siwy's Toughness is reduced to 1.
 Combatant Siwy acts.
 Combatant Siwy attacks Zdzich!
-Combatant Siwy rolls 28 (chance to hit: 70%). It's a hit!
-Combatant Siwy rolls 40 (chance to crit: 25%). No crit.
+Combatant Siwy rolls 84 (chance to hit: 70%). It's a miss.
+Round 2 begins.
+Combatant Siwy acts.
+Combatant Siwy attacks Zdzich!
+Combatant Siwy rolls 31 (chance to hit: 70%). It's a hit!
+Combatant Siwy rolls 92 (chance to crit: 25%). No crit.
 Combatant Siwy deals 3 damage to Zdzich.
-Combatant Zdzich's Toughness is reduced to 3.
-Combatant Bolo acts.
-Combatant Bolo attacks Siwy!
-Combatant Bolo rolls 5 (chance to hit: 70%). It's a hit!
-Combatant Bolo rolls 69 (chance to crit: 25%). No crit.
-Combatant Bolo deals 2 damage to Siwy.
-Combatant Siwy's Toughness is reduced to -1.
-Siwy died! Hit them right between the eyes.
-Round 3 begins.
-Combatant Zdzich acts.
-Combatant Zdzich attacks Jan!
-Combatant Zdzich rolls 78 (chance to hit: 70%). It's a miss.
+Combatant Zdzich's Toughness is reduced to 5.
 Combatant Jan acts.
-Combatant Jan attacks Bolo!
-Combatant Jan rolls 55 (chance to hit: 70%). It's a hit!
-Combatant Jan rolls 100 (chance to crit: 25%). No crit.
-Combatant Jan deals 5 damage to Bolo.
-Combatant Bolo's Toughness is reduced to 0.
-Bolo died! It's probably for the best.
-Round 4 begins.
+Combatant Jan attacks Siwy!
+Combatant Jan rolls 60 (chance to hit: 70%). It's a hit!
+Combatant Jan rolls 23 (chance to crit: 25%). Critical strike!
+Combatant Jan deals 10 critical damage (2 x Strength 5) to Siwy.
+Combatant Siwy's Toughness is reduced to -9.
+Siwy died! Better luck next time.
+Round 3 begins.
 Combatant Jan acts.
 Combatant Jan attacks Zdzich!
-Combatant Jan rolls 29 (chance to hit: 70%). It's a hit!
-Combatant Jan rolls 59 (chance to crit: 25%). No crit.
+Combatant Jan rolls 73 (chance to hit: 70%). It's a miss.
+Combatant Zdzich acts.
+Combatant Zdzich attacks Jan!
+Combatant Zdzich rolls 30 (chance to hit: 70%). It's a hit!
+Combatant Zdzich rolls 80 (chance to crit: 25%). No crit.
+Combatant Zdzich deals 6 damage to Jan.
+Combatant Jan's Toughness is reduced to 1.
+Round 4 begins.
+Combatant Zdzich acts.
+Combatant Zdzich attacks Jan!
+Combatant Zdzich rolls 91 (chance to hit: 70%). It's a miss.
+Combatant Jan acts.
+Combatant Jan attacks Zdzich!
+Combatant Jan rolls 13 (chance to hit: 70%). It's a hit!
+Combatant Jan rolls 44 (chance to crit: 25%). No crit.
 Combatant Jan deals 5 damage to Zdzich.
-Combatant Zdzich's Toughness is reduced to -2.
-Zdzich died! Ain't that a kick in the head.
+Combatant Zdzich's Toughness is reduced to 0.
+Zdzich died! Or perhaps I should say 'slain'.
 Jan is the last man standing!
 Jan wins the game!
 Thought for the day:
-The fox condemns the trap, not himself.
+Pain is an illusion of the senses.

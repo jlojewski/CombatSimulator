@@ -2,6 +2,7 @@ package Z1;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import javax.swing.*;
 import java.io.*;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -101,15 +102,27 @@ public class IOManager {
 
     }
 
-    public CombatSettings importCombatSettings() {
+//    public CombatSettings importCombatSettings() {
+//        CombatSettings settings = null;
+//        try {
+//            ObjectMapper settingsImportMapper = new ObjectMapper();
+//            settings = settingsImportMapper.readValue(Path.of("combat_settings.json").toFile(), CombatSettings.class);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        return settings;
+//    }
+
+    public CombatSettings importCombatSettings(File settingsToImport) {
         CombatSettings settings = null;
         try {
             ObjectMapper settingsImportMapper = new ObjectMapper();
-            settings = settingsImportMapper.readValue(Path.of("combat_settings.json").toFile(), CombatSettings.class);
+            settings = settingsImportMapper.readValue(settingsToImport , CombatSettings.class);
         } catch (IOException e) {
             e.printStackTrace();
         }
         return settings;
     }
+
 
 }

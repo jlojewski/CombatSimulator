@@ -6,7 +6,6 @@ public class Main {
 
 
 
-
     public static void main(String[] args) {
         String relayedMessage = "Welcome to Murderdome 2000!";
         MessageManager.getInstance().printMessage(relayedMessage);

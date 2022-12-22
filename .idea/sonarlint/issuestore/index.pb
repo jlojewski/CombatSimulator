@@ -5,8 +5,6 @@ y
 I.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_14_0.xml,5\1\513d3d6acdd98d3e7f8dff0e8df158b8af78457e
 €
 P.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_14_0.xml,0\9\091888443571031a20e4a62daeb9222271f5785c
-D
-SymulatorOngoing.iml,3\8\38b9a6645a2971973b59fbe527730871782b6fc4
 s
 Csrc/main/java/out/production/SymulatorOngoing/SymulatorOutgoing.iml,c\f\cf939f0fb07ffdc92aae3f0ec8fabfa6f0d241bd
 a
@@ -17,9 +15,11 @@ S
 #src/main/java/SymulatorOutgoing.iml,d\5\d5384d1c38fe6c18410d41dfcd6756f1f13a4aa8
 V
 &src/main/java/Z1/CombatantManager.java,6\d\6dbcba7b54270601b69470f4b8ec203084dbda26
-[
-+src/main/java/Z1/CombatSettingsCreator.java,e\1\e1b964d54b4a9047c0cee0b2a5e12fc7d116739e
 >
 commentary.txt,c\1\c1aa1abcac4a3315b98d01fee1173c087240537a
 A
 final_thought.txt,7\b\7bf2a5be9738bc6aef260797e1ca46f9182194b2
+D
+combat_settings.json,5\0\50020dcb49d59d4253f2b05d6bb6ffba724b22b7
+P
+ src/main/java/Z1/Initiative.java,b\c\bc21778fe741846250639f6b51c94bf3a00440fe

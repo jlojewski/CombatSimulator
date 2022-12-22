@@ -46,13 +46,13 @@ public final class Quip {
 
 
     public String printQuip(ArrayList<String> quipListToUse) {
-        int randomCommentary = ThreadLocalRandom.current().nextInt(1, (quipListToUse.size()+1));
+        int randomCommentary = ThreadLocalRandom.current().nextInt(0, (quipListToUse.size()));
 
         return quipListToUse.get(randomCommentary);
     }
 
     public String printThought(ArrayList<String> thoughtListToUse) {
-        int randomCommentary = ThreadLocalRandom.current().nextInt(1, (thoughtListToUse.size()+1));
+        int randomCommentary = ThreadLocalRandom.current().nextInt(0, (thoughtListToUse.size()));
 
         return thoughtListToUse.get(randomCommentary);
     }

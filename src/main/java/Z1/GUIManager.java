@@ -7,11 +7,23 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.File;
 
 public class GUIManager {
-    public GUIManager() {
+
+    JFileChooser settingsChooser;
+
+    private static GUIManager GUIManagerInstance;
+
+    private GUIManager() {
         settingsChooser = new JFileChooser();
     }
 
-    JFileChooser settingsChooser;
+    public static GUIManager getInstance() {
+        if (GUIManagerInstance == null) {
+            GUIManagerInstance = new GUIManager();
+        }
+
+        return GUIManagerInstance;
+    }
+
 
 
 

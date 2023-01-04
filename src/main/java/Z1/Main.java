@@ -10,9 +10,7 @@ public class Main {
         String relayedMessage = "Welcome to Murderdome 2000!";
         MessageManager.getInstance().printMessage(relayedMessage);
 
-        GUIManager guiInit = new GUIManager();
-
-        CombatSettings currentCombatSettings = IOManager.getInstance().importCombatSettings(guiInit.setupSettingsChooser());
+        CombatSettings currentCombatSettings = IOManager.getInstance().importCombatSettings(GUIManager.getInstance().setupSettingsChooser());
 //        CombatSettings currentCombatSettings = IOManager.getInstance().importCombatSettings();
 
         Quip.getInstance().initializeQuipList();

@@ -51,7 +51,7 @@ public class IOManager {
         collectOutputToArray(targetString);
     }
 
-    public void saveWinner(String winner) {
+    public void updateLastWinner(String winner) {
         PrintWriter winnerWriter = null;
         try {
             winnerWriter = new PrintWriter("last_winner.txt");
@@ -61,6 +61,30 @@ public class IOManager {
         winnerWriter.println("The last recorded winner was " + winner);
         winnerWriter.close();
     }
+
+
+
+    public void saveWinnerAsJsonFile(Combatant winner) {
+        ObjectMapper jsonWinnerMapper = new ObjectMapper();
+
+        try {
+            String winnerFileName = winner.getName();
+            File savedWinner = new File("C:/Java Projects/SymulatorOngoing/", winnerFileName + ".json");
+
+            for (int num = 1; savedWinner.exists(); num++) {
+            savedWinner = new File("C:/Java Projects/SymulatorOngoing/", winnerFileName + num + ".json");
+            }
+            jsonWinnerMapper.writeValue(savedWinner, winner);
+
+//            String winnerFileName = winner.getName();
+//            jsonWinnerMapper.writeValue(new FileWriter("C:/Java Projects/SymulatorOngoing/" + winnerFileName + ".json"), winner);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
 
     public ArrayList<String> importQuipList() {
         ArrayList<String> listOfQuips = null;

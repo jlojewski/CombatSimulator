@@ -63,5 +63,11 @@ public class Combatant {
         this.toughness = toughness;
     }
 
+    public void promoteCombatant(int boostToStrength, int boostToToughness) {
+        strength = getStrength() + boostToStrength;
+        toughness = getToughness() + boostToToughness;
+        String relayedMessage = getName() + " grows stronger through victory (Strength + " + boostToStrength + ", Toughness + " + boostToToughness + ")!";
+        IOManager.getInstance().relayString(relayedMessage);
+    }
 
 }

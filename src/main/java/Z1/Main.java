@@ -28,7 +28,8 @@ public class Main {
             Initiative.rollInitiative(combatantList);
             CombatCalculator.getInstance().performAttackSequence(combatantList, currentCombatSettings.getHitChance(), currentCombatSettings.getCritChance());
             if (CombatCalculator.getInstance().checkForVictory(combatantList) == true) {
-                IOManager.getInstance().saveWinner(combatantList.get(0).getName());
+                IOManager.getInstance().updateLastWinner(combatantList.get(0).getName());
+                IOManager.getInstance().saveWinnerAsJsonFile(combatantList.get(0));
 
                 break;
             } else if (i == currentCombatSettings.getRounds()) {

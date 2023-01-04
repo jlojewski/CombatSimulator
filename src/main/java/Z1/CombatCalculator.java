@@ -145,6 +145,7 @@ public final class CombatCalculator {
             IOManager.getInstance().relayString(relayedMessage);
             relayedMessage = victor.getName() + " wins the game!";
             IOManager.getInstance().relayString(relayedMessage);
+            victor.promoteCombatant(1, 1);
 
             return true;
 

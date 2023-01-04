@@ -15,15 +15,7 @@ S
 #src/main/java/SymulatorOutgoing.iml,d\5\d5384d1c38fe6c18410d41dfcd6756f1f13a4aa8
 >
 commentary.txt,c\1\c1aa1abcac4a3315b98d01fee1173c087240537a
-A
-final_thought.txt,7\b\7bf2a5be9738bc6aef260797e1ca46f9182194b2
-D
-combat_settings.json,5\0\50020dcb49d59d4253f2b05d6bb6ffba724b22b7
-D
-SymulatorOngoing.iml,3\8\38b9a6645a2971973b59fbe527730871782b6fc4
 g
 7.idea/libraries/Maven__commons_io_commons_io_2_11_0.xml,e\5\e5c4da2304c9868ccf0ccc3925ef6ca4bdd74b05
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-T
-$src/main/java/Z1/MessageManager.java,a\7\a7e4d7dec054c2c06771831763a87516fb99b784

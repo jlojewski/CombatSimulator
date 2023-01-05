@@ -19,3 +19,11 @@ g
 7.idea/libraries/Maven__commons_io_commons_io_2_11_0.xml,e\5\e5c4da2304c9868ccf0ccc3925ef6ca4bdd74b05
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+A
+final_thought.txt,7\b\7bf2a5be9738bc6aef260797e1ca46f9182194b2
+D
+SymulatorOngoing.iml,3\8\38b9a6645a2971973b59fbe527730871782b6fc4
+J
+src/main/java/Z1/Quip.java,2\e\2ebf0d32adad77ee905a399e17d4fd64492ac5a5
+P
+ src/main/java/Z1/Initiative.java,b\c\bc21778fe741846250639f6b51c94bf3a00440fe

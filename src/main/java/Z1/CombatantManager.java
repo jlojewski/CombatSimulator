@@ -99,4 +99,14 @@ public class CombatantManager {
         return combatants;
     }
 
+    public ArrayList<Combatant> mergeCombatantPool(ArrayList<Combatant> initialPool, ArrayList<Combatant> championPool) {
+        ArrayList<Combatant> mergedCombatantList = new ArrayList<>();
+        mergedCombatantList.addAll(initialPool);
+        mergedCombatantList.addAll(championPool);
+
+        return mergedCombatantList;
+    }
+
+
+
 }

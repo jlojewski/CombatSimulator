@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class IOManager {
     ArrayList<String> IOManagerOutput;
@@ -144,6 +145,21 @@ public class IOManager {
             e.printStackTrace();
         }
         return settings;
+    }
+
+    public ArrayList<Combatant> importChampionCombatants(File[] championsToImport) {
+        ArrayList<File> championsToConvert = new ArrayList(Arrays.asList(championsToImport));
+        ArrayList<Combatant> finalChampionList = null;
+        ObjectMapper championImportMapper = new ObjectMapper();
+        for (File f : championsToConvert) {
+            try {
+                Combatant tba = championImportMapper.readValue(f, Combatant.class);
+                finalChampionList.add(tba);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return finalChampionList;
     }
 
 

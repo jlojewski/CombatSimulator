@@ -9,6 +9,7 @@ public class CombatSettings {
     public int hitChance;
     public int critChance;
     public ArrayList<Combatant> combatants;
+    public ArrayList<Combatant> optionalChampionCombatants;
 
 
     public int getRounds() {

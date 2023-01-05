@@ -25,12 +25,14 @@ public class CombatSettingsCreator {
 
 
         ArrayList<Combatant> tempCombatantList = new ArrayList<Combatant>();
+        ArrayList<Combatant> optionalCombatantList = new ArrayList<Combatant>();
         tempCombatantList.add(c1);
         tempCombatantList.add(c2);
         tempCombatantList.add(c3);
         tempCombatantList.add(c4);
 
         settingsObject.combatants = tempCombatantList;
+        settingsObject.optionalChampionCombatants = optionalCombatantList;
         ObjectMapper jsonSettingsMapper = new ObjectMapper();
 
         try {

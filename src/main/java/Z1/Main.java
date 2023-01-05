@@ -11,6 +11,7 @@ public class Main {
         MessageManager.getInstance().printMessage(relayedMessage);
 
         CombatSettings currentCombatSettings = IOManager.getInstance().importCombatSettings(GUIManager.getInstance().setupSettingsChooser());
+
 //        CombatSettings currentCombatSettings = IOManager.getInstance().importCombatSettings();
 
         Quip.getInstance().initializeQuipList();

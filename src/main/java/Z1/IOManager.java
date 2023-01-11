@@ -147,20 +147,51 @@ public class IOManager {
         return settings;
     }
 
-    public ArrayList<Combatant> importChampionCombatants(File[] championsToImport) {
-        ArrayList<File> championsToConvert = new ArrayList(Arrays.asList(championsToImport));
-        ArrayList<Combatant> finalChampionList = null;
-        ObjectMapper championImportMapper = new ObjectMapper();
-        for (File f : championsToConvert) {
-            try {
-                Combatant tba = championImportMapper.readValue(f, Combatant.class);
-                finalChampionList.add(tba);
-            } catch (IOException e) {
-                e.printStackTrace();
+
+//    public ArrayList<Combatant> importChampionCombatants(File[] championsToImport) {
+//            ArrayList<File> championsToConvert = new ArrayList(Arrays.asList(championsToImport));
+//            ArrayList<Combatant> importedChampionList = null;
+//            ObjectMapper championImportMapper = new ObjectMapper();
+//            for (File f : championsToConvert) {
+//                try {
+//                    Combatant tba = championImportMapper.readValue(f, Combatant.class);
+//                    importedChampionList.add(tba);
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//            return importedChampionList;
+//
+//        }
+
+    public ArrayList<Combatant> importChampionCombatants(boolean importOrNot) {
+        if (importOrNot == true) {
+            String relayedMessage = null;
+             ArrayList<File> championsToConvert = new ArrayList(Arrays.asList(GUIManager.getInstance().setupChampionChooser()));
+            ArrayList<Combatant> importedChampionList = new ArrayList<Combatant>();
+            ObjectMapper championImportMapper = new ObjectMapper();
+            for (File f : championsToConvert) {
+                try {
+                    Combatant tba = championImportMapper.readValue(f, Combatant.class);
+                    relayedMessage = "Imported " + tba.getName() + " (Strength " + tba.getStrength() + ", Toughness " + tba.getToughness() + ")";
+                    IOManager.getInstance().relayString(relayedMessage);
+                    importedChampionList.add(tba);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+            return importedChampionList;
+
+        } else {
+            return null;
         }
-        return finalChampionList;
+
     }
 
 
-}
+    }
+
+
+
+
+

@@ -99,12 +99,16 @@ public class CombatantManager {
         return combatants;
     }
 
-    public ArrayList<Combatant> mergeCombatantPool(ArrayList<Combatant> initialPool, ArrayList<Combatant> championPool) {
-        ArrayList<Combatant> mergedCombatantList = new ArrayList<>();
-        mergedCombatantList.addAll(initialPool);
-        mergedCombatantList.addAll(championPool);
+    public ArrayList<Combatant> prepareFinalCombatantList(ArrayList<Combatant> initialPool, ArrayList<Combatant> championPool) {
+        if (championPool != null) {
+            ArrayList<Combatant> mergedCombatantList = new ArrayList<>();
+            mergedCombatantList.addAll(initialPool);
+            mergedCombatantList.addAll(championPool);
 
-        return mergedCombatantList;
+            return mergedCombatantList;
+        } else {
+            return initialPool;
+        }
     }
 
 

@@ -17,6 +17,7 @@ public class GUIManager {
 
     private GUIManager() {
         settingsChooser = new JFileChooser();
+        championChooser = new JFileChooser();
     }
 
     public static GUIManager getInstance() {
@@ -26,8 +27,6 @@ public class GUIManager {
 
         return GUIManagerInstance;
     }
-
-
 
 
     public File setupSettingsChooser() {
@@ -69,23 +68,57 @@ public class GUIManager {
         championChooser.setDialogTitle("Choose all .json files containing additional combatants");
 
         int returnVal = championChooser.showOpenDialog(null);
-        if (returnVal == JFileChooser.APPROVE_OPTION) {
+        if (returnVal == championChooser.APPROVE_OPTION) {
             File[] chosenChampions = championChooser.getSelectedFiles();
 
-            String fileExt = FilenameUtils.getExtension(chosenChampions.toString());
+            for (var f : chosenChampions) {
+                String fileExt = FilenameUtils.getExtension(f.toString());
 
-            if (!fileExt.equals("json")) {
-                return setupChampionChooser();
+                if (!fileExt.equals("json")) {
+                    return setupChampionChooser();
 
-            } else {
-                return chosenChampions;
+                } else {
+                    break;
+                }
             }
+            return chosenChampions;
         } else {
             System.exit(0);
             return null;
         }
     }
 
+//    public File[] askIfChampionsAreUsed() {
+//        String[] options = {"Yes", "No"};
+//        int returnVal = JOptionPane.showOptionDialog(null, "Do you want to import any of the previous winners " +
+//                "as additional combatants?", "Importing champions", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE,
+//                null, options, options[1]);
+//        switch (returnVal) {
+//            case JOptionPane.YES_OPTION:
+//                return setupChampionChooser();
+//
+//            default:
+//                return null;
+//        }
+//
+//
+//    }
+
+    public boolean askIfChampionsAreUsed() {
+        String[] options = {"Yes", "No"};
+        int returnVal = JOptionPane.showOptionDialog(null, "Do you want to import any of the previous winners " +
+                        "as additional combatants?", "Importing champions", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE,
+                null, options, options[1]);
+        switch (returnVal) {
+            case JOptionPane.YES_OPTION:
+                return true;
+
+            default:
+                return false;
+        }
+
+
+    }
 
 
 }

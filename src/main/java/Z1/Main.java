@@ -12,11 +12,21 @@ public class Main {
 
         CombatSettings currentCombatSettings = IOManager.getInstance().importCombatSettings(GUIManager.getInstance().setupSettingsChooser());
 
+
+
 //        CombatSettings currentCombatSettings = IOManager.getInstance().importCombatSettings();
+
 
         Quip.getInstance().initializeQuipList();
 
-        ArrayList<Combatant> combatantList = CombatantManager.getInstance().createCombatantsBasedOnSettings(currentCombatSettings);
+        ArrayList<Combatant> combatantList = CombatantManager.getInstance()
+                .prepareFinalCombatantList(
+                        CombatantManager.getInstance().createCombatantsBasedOnSettings(currentCombatSettings),
+                        IOManager.getInstance().importChampionCombatants(GUIManager.getInstance().askIfChampionsAreUsed())
+                        );
+
+//        ArrayList<Combatant> combatantList = CombatantManager.getInstance().createCombatantsBasedOnSettings(currentCombatSettings);
+
 
         relayedMessage = "Let's go!";
         IOManager.getInstance().relayString(relayedMessage);

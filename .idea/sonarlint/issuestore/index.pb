@@ -23,5 +23,3 @@ A
 final_thought.txt,7\b\7bf2a5be9738bc6aef260797e1ca46f9182194b2
 D
 SymulatorOngoing.iml,3\8\38b9a6645a2971973b59fbe527730871782b6fc4
-D
-combat_settings.json,5\0\50020dcb49d59d4253f2b05d6bb6ffba724b22b7

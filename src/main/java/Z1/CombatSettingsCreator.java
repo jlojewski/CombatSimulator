@@ -19,10 +19,10 @@ public class CombatSettingsCreator {
         settingsObject.hitChance = 70;
         settingsObject.critChance = 25;
 
-        Combatant c1 = new Combatant("Jan", 5, 7, 1);
-        Combatant c2 = new Combatant("Zdzich", 6, 8, 2);
-        Combatant c3 = new Combatant("Siwy", 3, 11, 3);
-        Combatant c4 = new Combatant("Bolo", 2, 5, 4);
+        Combatant c1 = new Combatant("Jan", 5, 7, UUID.randomUUID());
+        Combatant c2 = new Combatant("Zdzich", 6, 8, UUID.randomUUID());
+        Combatant c3 = new Combatant("Siwy", 3, 11, UUID.randomUUID());
+        Combatant c4 = new Combatant("Bolo", 2, 5, UUID.randomUUID());
 
 
         ArrayList<Combatant> tempCombatantList = new ArrayList<Combatant>();

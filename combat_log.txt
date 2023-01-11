@@ -3,89 +3,103 @@ Created Jan (Strength 5, Toughness 7)
 Created Zdzich (Strength 6, Toughness 8)
 Created Siwy (Strength 3, Toughness 11)
 Created Bolo (Strength 2, Toughness 5)
-Imported Siwy (Strength 4, Toughness 10)
+Imported Jan (Strength 6, Toughness 4)
+Imported Siwy (Strength 4, Toughness 12)
 Let's go!
 -|------  ------|-
 Round 1 begins.
 Combatant Jan acts.
-Combatant Jan attacks Siwy!
-Combatant Jan rolls 27 (chance to hit: 70%). It's a hit!
-Combatant Jan rolls 63 (chance to crit: 25%). No crit.
-Combatant Jan deals 5 damage to Siwy.
-Combatant Siwy's Toughness is reduced to 5.
-Combatant Siwy acts.
-Combatant Siwy attacks Bolo!
-Combatant Siwy rolls 79 (chance to hit: 70%). It's a miss.
-Combatant Bolo acts.
-Combatant Bolo attacks Siwy!
-Combatant Bolo rolls 19 (chance to hit: 70%). It's a hit!
-Combatant Bolo rolls 1 (chance to crit: 25%). Critical strike!
-Combatant Bolo deals 4 critical damage (2 x Strength 2) to Siwy.
-Combatant Siwy's Toughness is reduced to 1.
-Combatant Zdzich acts.
-Combatant Zdzich attacks Siwy!
-Combatant Zdzich rolls 35 (chance to hit: 70%). It's a hit!
-Combatant Zdzich rolls 18 (chance to crit: 25%). Critical strike!
-Combatant Zdzich deals 12 critical damage (2 x Strength 6) to Siwy.
-Combatant Siwy's Toughness is reduced to -1.
-Siwy died! Is celebration in order?
-Round 2 begins.
-Combatant Siwy acts.
-Combatant Siwy attacks Bolo!
-Combatant Siwy rolls 14 (chance to hit: 70%). It's a hit!
-Combatant Siwy rolls 95 (chance to crit: 25%). No crit.
-Combatant Siwy deals 4 damage to Bolo.
-Combatant Bolo's Toughness is reduced to 1.
-Combatant Jan acts.
-Combatant Jan attacks Siwy!
-Combatant Jan rolls 35 (chance to hit: 70%). It's a hit!
-Combatant Jan rolls 38 (chance to crit: 25%). No crit.
-Combatant Jan deals 5 damage to Siwy.
-Combatant Siwy's Toughness is reduced to -4.
-Siwy died! Skill issue.
-Combatant Bolo acts.
-Combatant Bolo attacks Zdzich!
-Combatant Bolo rolls 65 (chance to hit: 70%). It's a hit!
-Combatant Bolo rolls 98 (chance to crit: 25%). No crit.
-Combatant Bolo deals 2 damage to Zdzich.
-Combatant Zdzich's Toughness is reduced to 6.
-Round 3 begins.
-Combatant Zdzich acts.
-Combatant Zdzich attacks Bolo!
-Combatant Zdzich rolls 45 (chance to hit: 70%). It's a hit!
-Combatant Zdzich rolls 50 (chance to crit: 25%). No crit.
-Combatant Zdzich deals 6 damage to Bolo.
-Combatant Bolo's Toughness is reduced to -5.
-Bolo died! Does their insurance cover this?
-Combatant Jan acts.
 Combatant Jan attacks Zdzich!
-Combatant Jan rolls 34 (chance to hit: 70%). It's a hit!
-Combatant Jan rolls 62 (chance to crit: 25%). No crit.
-Combatant Jan deals 5 damage to Zdzich.
-Combatant Zdzich's Toughness is reduced to 1.
-Round 4 begins.
+Combatant Jan rolls 98 (chance to hit: 70%). It's a miss.
+Combatant Siwy acts.
+Combatant Siwy attacks Zdzich!
+Combatant Siwy rolls 5 (chance to hit: 70%). It's a hit!
+Combatant Siwy rolls 38 (chance to crit: 25%). No crit.
+Combatant Siwy deals 4 damage to Zdzich.
+Combatant Zdzich's Toughness is reduced to 4.
 Combatant Zdzich acts.
 Combatant Zdzich attacks Jan!
-Combatant Zdzich rolls 67 (chance to hit: 70%). It's a hit!
-Combatant Zdzich rolls 83 (chance to crit: 25%). No crit.
+Combatant Zdzich rolls 18 (chance to hit: 70%). It's a hit!
+Combatant Zdzich rolls 72 (chance to crit: 25%). No crit.
 Combatant Zdzich deals 6 damage to Jan.
 Combatant Jan's Toughness is reduced to 1.
 Combatant Jan acts.
-Combatant Jan attacks Zdzich!
-Combatant Jan rolls 94 (chance to hit: 70%). It's a miss.
-Round 5 begins.
+Combatant Jan attacks Siwy!
+Combatant Jan rolls 9 (chance to hit: 70%). It's a hit!
+Combatant Jan rolls 25 (chance to crit: 25%). Critical strike!
+Combatant Jan deals 10 critical damage (2 x Strength 5) to Siwy.
+Combatant Siwy's Toughness is reduced to 2.
+Combatant Siwy acts.
+Combatant Siwy attacks Jan!
+Combatant Siwy rolls 28 (chance to hit: 70%). It's a hit!
+Combatant Siwy rolls 44 (chance to crit: 25%). No crit.
+Combatant Siwy deals 3 damage to Jan.
+Combatant Jan's Toughness is reduced to -2.
+Jan died! Ain't that a kick in the head.
+Round 2 begins.
+Combatant Zdzich acts.
+Combatant Zdzich attacks Siwy!
+Combatant Zdzich rolls 50 (chance to hit: 70%). It's a hit!
+Combatant Zdzich rolls 6 (chance to crit: 25%). Critical strike!
+Combatant Zdzich deals 12 critical damage (2 x Strength 6) to Siwy.
+Combatant Siwy's Toughness is reduced to -10.
+Siwy died! That's why you don't root for the underdogs.
+Combatant Bolo acts.
+Combatant Bolo attacks Siwy!
+Combatant Bolo rolls 7 (chance to hit: 70%). It's a hit!
+Combatant Bolo rolls 21 (chance to crit: 25%). Critical strike!
+Combatant Bolo deals 4 critical damage (2 x Strength 2) to Siwy.
+Combatant Siwy's Toughness is reduced to 7.
+Combatant Siwy acts.
+Combatant Siwy attacks Bolo!
+Combatant Siwy rolls 92 (chance to hit: 70%). It's a miss.
 Combatant Jan acts.
-Combatant Jan attacks Zdzich!
-Combatant Jan rolls 92 (chance to hit: 70%). It's a miss.
+Combatant Jan attacks Siwy!
+Combatant Jan rolls 65 (chance to hit: 70%). It's a hit!
+Combatant Jan rolls 68 (chance to crit: 25%). No crit.
+Combatant Jan deals 6 damage to Siwy.
+Combatant Siwy's Toughness is reduced to 1.
+Round 3 begins.
+Combatant Siwy acts.
+Combatant Siwy attacks Bolo!
+Combatant Siwy rolls 59 (chance to hit: 70%). It's a hit!
+Combatant Siwy rolls 27 (chance to crit: 25%). No crit.
+Combatant Siwy deals 3 damage to Bolo.
+Combatant Bolo's Toughness is reduced to 2.
+Combatant Jan acts.
+Combatant Jan attacks Siwy!
+Combatant Jan rolls 74 (chance to hit: 70%). It's a miss.
+Combatant Zdzich acts.
+Combatant Zdzich attacks Siwy!
+Combatant Zdzich rolls 76 (chance to hit: 70%). It's a miss.
+Combatant Bolo acts.
+Combatant Bolo attacks Zdzich!
+Combatant Bolo rolls 86 (chance to hit: 70%). It's a miss.
+Round 4 begins.
+Combatant Siwy acts.
+Combatant Siwy attacks Bolo!
+Combatant Siwy rolls 47 (chance to hit: 70%). It's a hit!
+Combatant Siwy rolls 48 (chance to crit: 25%). No crit.
+Combatant Siwy deals 3 damage to Bolo.
+Combatant Bolo's Toughness is reduced to -1.
+Bolo died! But is it enough to secure a victory?
 Combatant Zdzich acts.
 Combatant Zdzich attacks Jan!
-Combatant Zdzich rolls 29 (chance to hit: 70%). It's a hit!
-Combatant Zdzich rolls 94 (chance to crit: 25%). No crit.
+Combatant Zdzich rolls 39 (chance to hit: 70%). It's a hit!
+Combatant Zdzich rolls 41 (chance to crit: 25%). No crit.
 Combatant Zdzich deals 6 damage to Jan.
-Combatant Jan's Toughness is reduced to -5.
-Jan died! Doctorate denied.
-Zdzich is the last man standing!
-Zdzich wins the game!
-Zdzich grows stronger through victory (Strength + 1, Toughness + 1)!
+Combatant Jan's Toughness is reduced to -2.
+Jan died! It's as they say: you can check out anytime you want, but you can never leave.
+Round 5 begins.
+Combatant Siwy acts.
+Combatant Siwy attacks Zdzich!
+Combatant Siwy rolls 18 (chance to hit: 70%). It's a hit!
+Combatant Siwy rolls 1 (chance to crit: 25%). Critical strike!
+Combatant Siwy deals 6 critical damage (2 x Strength 3) to Zdzich.
+Combatant Zdzich's Toughness is reduced to -2.
+Zdzich died! Stab them again, just to be sure.
+Siwy is the last man standing!
+Siwy wins the game!
+Siwy grows stronger through victory (Strength + 1, Toughness + 1)!
 Thought for the day:
-Pain is an illusion of the senses.
+The brave do not fear the grave.

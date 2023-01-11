@@ -2,6 +2,7 @@ package Z1;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Predicate;
 
@@ -45,10 +46,10 @@ public final class CombatCalculator {
 
 
     public Combatant pickTarget(ArrayList<Combatant> combatantList, Combatant attacker) {
-        int attackerId = attacker.getCombatantId();
-        List<Combatant> targetList =
+        UUID attackerId = attacker.getCombatantId();
+        var targetList =
                 combatantList.stream()
-                        .filter(r -> r.combatantId != attacker.getCombatantId())
+                        .filter(r -> r.getCombatantId() != (attacker.getCombatantId()))
                         .collect(toList());
         int randomPickRoll = ThreadLocalRandom.current().nextInt(0, targetList.size());
 

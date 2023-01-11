@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static java.util.stream.Collectors.toList;
@@ -15,7 +16,7 @@ public class Combatant {
 
     int strength;
     int toughness;
-    int combatantId;
+    UUID combatantId;
     String name;
     boolean isDead = false;
 
@@ -31,16 +32,16 @@ public class Combatant {
         this.name = name;
     }
 
-    public int getCombatantId() {
+    public UUID getCombatantId() {
         return combatantId;
     }
 
-    public void setCombatantId(int combatantId) {
+    public void setCombatantId(UUID combatantId) {
         this.combatantId = combatantId;
     }
 
     @JsonCreator
-    public Combatant(@JsonProperty("name") String name, @JsonProperty("strength") int strength, @JsonProperty("toughness") int toughness, @JsonProperty("combatantId") int combatantId) {
+    public Combatant(@JsonProperty("name") String name, @JsonProperty("strength") int strength, @JsonProperty("toughness") int toughness, @JsonProperty("combatantId") UUID combatantId) {
         this.name = name;
         this.strength = strength;
         this.toughness = toughness;

@@ -6,11 +6,12 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.UUID;
 
 public class CombatSettingsCreator {
     
-    //use this if you want to create a new settings json for whatever reason
+    //use this class if you want to create a new settings json for whatever reason
 
     public static void main(String[] args) {
 
@@ -19,10 +20,14 @@ public class CombatSettingsCreator {
         settingsObject.hitChance = 70;
         settingsObject.critChance = 25;
 
-        Combatant c1 = new Combatant("Jan", 5, 7, UUID.randomUUID());
-        Combatant c2 = new Combatant("Zdzich", 6, 8, UUID.randomUUID());
-        Combatant c3 = new Combatant("Siwy", 3, 11, UUID.randomUUID());
-        Combatant c4 = new Combatant("Bolo", 2, 5, UUID.randomUUID());
+        //uncomment and use the code line below if you want to randomize the name of your combatants from a predefined list
+        ArrayList<String> optionalRandomNameList = IOManager.getInstance().importNameList();
+
+
+        Combatant c1 = new Combatant(CombatantManager.getInstance().getRandomName(optionalRandomNameList), 5, 7, UUID.randomUUID());
+        Combatant c2 = new Combatant(CombatantManager.getInstance().getRandomName(optionalRandomNameList), 6, 8, UUID.randomUUID());
+        Combatant c3 = new Combatant(CombatantManager.getInstance().getRandomName(optionalRandomNameList), 3, 11, UUID.randomUUID());
+        Combatant c4 = new Combatant(CombatantManager.getInstance().getRandomName(optionalRandomNameList), 2, 5, UUID.randomUUID());
 
 
         ArrayList<Combatant> tempCombatantList = new ArrayList<Combatant>();

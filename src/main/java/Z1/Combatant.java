@@ -1,6 +1,7 @@
 package Z1;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ public class Combatant {
 
     int strength;
     int toughness;
+    @JsonIgnore
     int initialToughness;
     UUID combatantId;
     String name;

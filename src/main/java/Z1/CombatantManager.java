@@ -2,6 +2,7 @@ package Z1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class CombatantManager {
 
@@ -112,6 +113,10 @@ public class CombatantManager {
         }
     }
 
+    public String getRandomName(ArrayList<String> nameListToUse) {
+        int randomName = ThreadLocalRandom.current().nextInt(0, (nameListToUse.size()));
 
+        return nameListToUse.get(randomName);
+    }
 
 }

@@ -71,6 +71,7 @@ public class IOManager {
         ObjectMapper jsonWinnerMapper = new ObjectMapper();
 
         try {
+            winner.setCombatantId(winner.getCombatantId().randomUUID());
             Files.createDirectories(Paths.get("champions"));
             String winnerFileName = winner.getName();
             File savedWinner = new File("champions", winnerFileName + ".json");
@@ -106,6 +107,25 @@ public class IOManager {
         }
 
         return listOfQuips;
+
+    }
+
+    public ArrayList<String> importNameList() {
+        ArrayList<String> listOfNames = null;
+        try {
+            BufferedReader importReader = new BufferedReader(new FileReader("C:/Java Projects/SymulatorOngoing/names.txt"));
+            listOfNames = new ArrayList<>();
+            String nameLine = importReader.readLine();
+            while (nameLine != null) {
+                listOfNames.add(nameLine);
+                nameLine = importReader.readLine();
+            }
+            importReader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return listOfNames;
 
     }
 
@@ -176,6 +196,7 @@ public class IOManager {
             for (File f : championsToConvert) {
                 try {
                     Combatant tba = championImportMapper.readValue(f, Combatant.class);
+                    tba.setInitialToughness(tba.getToughness());
                     relayedMessage = "Imported " + tba.getName() + " (Strength " + tba.getStrength() + ", Toughness " + tba.getToughness() + ")";
                     IOManager.getInstance().relayString(relayedMessage);
                     importedChampionList.add(tba);

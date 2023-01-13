@@ -13,8 +13,6 @@ a
 1src/main/java/.idea/sonarlint/issuestore/index.pb,b\a\ba6ca26fd533f44020d3aafd3513515cacc61222
 S
 #src/main/java/SymulatorOutgoing.iml,d\5\d5384d1c38fe6c18410d41dfcd6756f1f13a4aa8
->
-commentary.txt,c\1\c1aa1abcac4a3315b98d01fee1173c087240537a
 g
 7.idea/libraries/Maven__commons_io_commons_io_2_11_0.xml,e\5\e5c4da2304c9868ccf0ccc3925ef6ca4bdd74b05
 7
@@ -23,3 +21,7 @@ A
 final_thought.txt,7\b\7bf2a5be9738bc6aef260797e1ca46f9182194b2
 D
 SymulatorOngoing.iml,3\8\38b9a6645a2971973b59fbe527730871782b6fc4
+V
+&src/main/java/Z1/CombatantManager.java,6\d\6dbcba7b54270601b69470f4b8ec203084dbda26
+O
+src/main/java/Z1/Combatant.java,9\7\97b5e91d66d8b9eae0fb78a8be6012e5563d862b

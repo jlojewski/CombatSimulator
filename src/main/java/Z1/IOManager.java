@@ -142,7 +142,7 @@ public class IOManager {
             ObjectMapper settingsImportMapper = new ObjectMapper();
             settings = settingsImportMapper.readValue(settingsToImport , CombatSettings.class);
         } catch (IOException e) {
-            e.printStackTrace();
+            GUIManager.getInstance().setupSettingsChooser();
         }
         return settings;
     }
@@ -167,7 +167,7 @@ public class IOManager {
     public ArrayList<Combatant> importChampionCombatants(boolean importOrNot) {
         if (importOrNot == true) {
             String relayedMessage = null;
-             ArrayList<File> championsToConvert = new ArrayList(Arrays.asList(GUIManager.getInstance().setupChampionChooser()));
+            ArrayList<File> championsToConvert = new ArrayList(Arrays.asList(GUIManager.getInstance().setupChampionChooser()));
             ArrayList<Combatant> importedChampionList = new ArrayList<Combatant>();
             ObjectMapper championImportMapper = new ObjectMapper();
             for (File f : championsToConvert) {
@@ -177,7 +177,7 @@ public class IOManager {
                     IOManager.getInstance().relayString(relayedMessage);
                     importedChampionList.add(tba);
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    GUIManager.getInstance().setupChampionChooser();
                 }
             }
             return importedChampionList;

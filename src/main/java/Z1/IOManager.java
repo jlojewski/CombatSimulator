@@ -3,6 +3,8 @@ package Z1;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -69,11 +71,12 @@ public class IOManager {
         ObjectMapper jsonWinnerMapper = new ObjectMapper();
 
         try {
+            Files.createDirectories(Paths.get("champions"));
             String winnerFileName = winner.getName();
-            File savedWinner = new File("C:/Java Projects/SymulatorOngoing/", winnerFileName + ".json");
+            File savedWinner = new File("champions", winnerFileName + ".json");
 
             for (int num = 1; savedWinner.exists(); num++) {
-            savedWinner = new File("C:/Java Projects/SymulatorOngoing/", winnerFileName + num + ".json");
+            savedWinner = new File("champions", winnerFileName + num + ".json");
             }
             jsonWinnerMapper.writeValue(savedWinner, winner);
 

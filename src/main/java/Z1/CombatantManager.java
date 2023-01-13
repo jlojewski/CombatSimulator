@@ -92,6 +92,7 @@ public class CombatantManager {
         IOManager.getInstance().relayString(relayedMessage);
         ArrayList<Combatant> combatants = new ArrayList<Combatant>(settingsToWorkOn.combatants);
         for(Combatant c : combatants) {
+            c.setInitialToughness(c.getToughness());
             relayedMessage = "Created " + c.getName() + " (Strength " + c.getStrength() + ", Toughness " + c.getToughness() + ")";
             IOManager.getInstance().relayString(relayedMessage);
         }

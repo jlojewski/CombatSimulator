@@ -16,6 +16,7 @@ public class Combatant {
 
     int strength;
     int toughness;
+    int initialToughness;
     UUID combatantId;
     String name;
     boolean isDead = false;
@@ -64,9 +65,17 @@ public class Combatant {
         this.toughness = toughness;
     }
 
+    public int getInitialToughness() {
+        return initialToughness;
+    }
+
+    public void setInitialToughness(int initialToughness) {
+        this.initialToughness = initialToughness;
+    }
+
     public void promoteCombatant(int boostToStrength, int boostToToughness) {
         strength = getStrength() + boostToStrength;
-        toughness = getToughness() + boostToToughness;
+        toughness = getInitialToughness() + boostToToughness;
         String relayedMessage = getName() + " grows stronger through victory (Strength + " + boostToStrength + ", Toughness + " + boostToToughness + ")!";
         IOManager.getInstance().relayString(relayedMessage);
     }

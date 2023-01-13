@@ -21,7 +21,3 @@ A
 final_thought.txt,7\b\7bf2a5be9738bc6aef260797e1ca46f9182194b2
 D
 SymulatorOngoing.iml,3\8\38b9a6645a2971973b59fbe527730871782b6fc4
-V
-&src/main/java/Z1/CombatantManager.java,6\d\6dbcba7b54270601b69470f4b8ec203084dbda26
-O
-src/main/java/Z1/Combatant.java,9\7\97b5e91d66d8b9eae0fb78a8be6012e5563d862b
